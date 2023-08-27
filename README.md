@@ -1,45 +1,31 @@
 # Instructions
 
 ## Overview
-This reading will introduce you to the scope of things you will cover in this Capstone Project course.  This course covers building a capstone project in React, specifically building a React-based web app for the Little Lemon restaurant.
+The following screens are a possible solution for your projects and the design proposed may vary. However, although the designs may vary, the screens do need to contain the required elements described for each.
 
-The Capstone project enables you to demonstrate multiple skills from the Certificate by solving an authentic real-world problems. Each module includes a brief recap of, and links to, content that you have covered in previous courses in this program. 
+Make sure to check that screens you are reviewing contain the required elements as described in each item.
+## SCREEN 1: Home screen
+Your solution needs to link the reserve-a-table button to your next screen.
+<img src="/public/-za4YHM6TEGRVVarcLRCLA_74f4dbcdd1194aa9b1cc56239b41c5e1_image.png">
+This screen needs to feature:
+- An element to input the date.
+- An element to input the time.
+- An element to input the number of diners.
+- An element to input the occasion.
+- A button to link to the next screen.
 
-This course will test your knowledge and understanding, and provide you with a platform to show off your new abilities in front-end web development using React. During this course, you will be guided through the process of building an app, combining all the skills and technologies you've learned throughout this program to solve the problem at hand. 
+Additionally, the screen should encompass the look and feel of the Little Lemon restaurant brand as per the style guide provided.
+<img src="/public/MQN3aTbrRYC3Gltj7zRLvg_802c380f429147d986aec0dd4d2d85e1_image.png">
+This screen needs to capture the customer details, including:
+- Customer’s first and last name.
+- Contact information, such as phone or email.
+- Required fields should be indicated.
+- A button to confirm or submit the customer information.
+- Option to confirm selection (optional).
 
-To complete this course, you will need Front-End developer experience.  Additionally, it always helps to have a can-do attitude!
-
-On completion of the Capstone project, you’ll have a job-ready portfolio that you can show to recruiters, demonstrate during interviews and impress potential employers.
-
-This course consists of four modules:
-## Module 1: Starting the project
-This introductory module will give you some general information about the capstone project. You'll also review the process of setting up your coding environment, tracking your code using Git and setting up your UX/UI processes. The purpose is to guide you through setting up and beginning your work on the project.
-
-By the end of this module, you will have completed the following:
-- Ensuring that your development environment is working and is set up to be as efficient as possible
-- Ensuring that you're tracking your project using version control, specifically Git and GitHub
-- Planning the UX/UI, including project wireframing, creating a component and applying design fundamentals in Figma
-
-## Module 2: Project foundations
-The second module of this course begins with a revision of semantic HTML. You'll need to set up a semantic HTML structure for your app. As styling your apps is essential, in this module, you'll also need to write some CSS code, including setting up a reusable CSS grid. Styling is closely related to components; thus, this module will guide you in setting up your project's components.
-
-By the end of this module, you will have completed the following:
-- Setting up your project's HTML structure and styling
-- Setting up your project's components
-
-## Module 3: Project functionality
-In this module, you'll focus on coding interactive parts of your app. You will complete your app's functionality, your app’s booking form with its own state, working with data and using APIs. Additionally, you'll improve the UX/UI of your app by further enhancing your users' experience through the evaluation and revision of its design. You will also address accessibility and form design.
-
-By the end of this module, you will have completed the following:
-- Coding the table booking system, including state,
-- Working with forms to update your app's state through user input,
-- Adding unit tests to ensure your app works correctly as you code new features 
-- Working with some in-browser APIs to ensure more persistent data
-
-## Module 4: Graded assessment
-In this module, you will be assessed on the fundamental skills covered as you build the capstone project's functionality. You'll have a chance to compare your code and your designs with your peers via a peer review, as well as work through a solution to some of the most challenging parts of the capstone project. At the end of this module, you'll complete a graded assessment, reflect on your learning and be guided to the next steps in your developer journey.
-
-By the end of this module, you will have completed the following:
-- A peer-review of some of your peers' projects
-- A graded assessment in which you synthesize the skills from this course
-- A reflection on your learning and the next steps in your developer journey
+Once again, the screen should encompass the look and feel of the Little Lemon restaurant brand as per the style guide provided.
+<img src="/public/n8ruHFl0TjeqYO1U32xImw_ea4b7c3f89184181abad617853eface1_image.png">
+If the customer forgets to input details, they should be presented with relevant warnings.
+<img src="/public/CtQOL9LwTYqauYiagbN_Qg_404a37f0edfe450baa2995a787221be1_image.png">
+Once the customer has completed and submitted the reservation form, they should receive confirmation of their submission.
+<img src="/public/o59UZagLQj-mhc6OaufAPQ_ac9e12cb1e2c4eb6a413645a180f08e1_image.png">
