@@ -1,52 +1,45 @@
 # Instructions
 
-## Task
+## Overview
+This reading will introduce you to the scope of things you will cover in this Capstone Project course.  This course covers building a capstone project in React, specifically building a React-based web app for the Little Lemon restaurant.
 
-The Little Lemon restaurant has decided to remove all desserts with high calories from their menu.
+The Capstone project enables you to demonstrate multiple skills from the Certificate by solving an authentic real-world problems. Each module includes a brief recap of, and links to, content that you have covered in previous courses in this program. 
 
-In this lab, you are going to implement a new list component, `DessertsList`, that will display a list of desserts with less than 500 calories, all sorted by calories, from low to high.
+This course will test your knowledge and understanding, and provide you with a platform to show off your new abilities in front-end web development using React. During this course, you will be guided through the process of building an app, combining all the skills and technologies you've learned throughout this program to solve the problem at hand. 
 
-The data you have to work with has been provided to you inside the App.js file, as an array of objects. Each object represents a dessert and has the following properties: `name`, `calories` and `createdAt`.
+To complete this course, you will need Front-End developer experience.  Additionally, it always helps to have a can-do attitude!
 
-The `App` component passes that information to the `DessertsList` component as a prop named `data`.
+On completion of the Capstone project, you’ll have a job-ready portfolio that you can show to recruiters, demonstrate during interviews and impress potential employers.
 
-Each item from the list should display the name of the dessert and the number of calories, both separated by a dash character, i.e. `Chocolate Mousse - 250 cal`.
+This course consists of four modules:
+## Module 1: Starting the project
+This introductory module will give you some general information about the capstone project. You'll also review the process of setting up your coding environment, tracking your code using Git and setting up your UX/UI processes. The purpose is to guide you through setting up and beginning your work on the project.
 
-**Note:** Before you begin, make sure you understand how to work with the Coursera Code Lab for the [Advanced React course](https://www.coursera.org/learn/advanced-react/supplement/htaLX/working-with-labs-in-this-course).
+By the end of this module, you will have completed the following:
+- Ensuring that your development environment is working and is set up to be as efficient as possible
+- Ensuring that you're tracking your project using version control, specifically Git and GitHub
+- Planning the UX/UI, including project wireframing, creating a component and applying design fundamentals in Figma
 
+## Module 2: Project foundations
+The second module of this course begins with a revision of semantic HTML. You'll need to set up a semantic HTML structure for your app. As styling your apps is essential, in this module, you'll also need to write some CSS code, including setting up a reusable CSS grid. Styling is closely related to components; thus, this module will guide you in setting up your project's components.
 
-If you run npm start and view the app in the browser, you'll notice that the starting React app works as is. The app outputs the below interface with a simple header. You'll build from that starting point.
+By the end of this module, you will have completed the following:
+- Setting up your project's HTML structure and styling
+- Setting up your project's components
 
-![Alt text](images/image1.png)
+## Module 3: Project functionality
+In this module, you'll focus on coding interactive parts of your app. You will complete your app's functionality, your app’s booking form with its own state, working with data and using APIs. Additionally, you'll improve the UX/UI of your app by further enhancing your users' experience through the evaluation and revision of its design. You will also address accessibility and form design.
 
-## Steps
+By the end of this module, you will have completed the following:
+- Coding the table booking system, including state,
+- Working with forms to update your app's state through user input,
+- Adding unit tests to ensure your app works correctly as you code new features 
+- Working with some in-browser APIs to ensure more persistent data
 
-### **Step 1**
+## Module 4: Graded assessment
+In this module, you will be assessed on the fundamental skills covered as you build the capstone project's functionality. You'll have a chance to compare your code and your designs with your peers via a peer review, as well as work through a solution to some of the most challenging parts of the capstone project. At the end of this module, you'll complete a graded assessment, reflect on your learning and be guided to the next steps in your developer journey.
 
-Open the `DessertsList.js` file.
-
-You’ll see an empty component that at the moment returns `null`, resulting in rendering nothing at all.
-
-The `DessertsList` component receives a prop called `data`, which is an array containing the list of desserts.
-You can check the exact shape of the data at the top of the `App.js` file, under a variable called `desserts`.
-
-### **Step 2**
-
-Open the `DessertsList.js` file. You only need to implement this component to complete this exercise.
-
-Remove the `null` and instead return a `ul` element that contains a list of `li` elements, where each `li` text is a dessert with the following format: `${dessertName} - ${dessertCalories} cal`.
-
-The list should be sorted by calories in an ascending manner and any desserts with more than 500 calories should be excluded.
-For that you have to use a combination of `map`, `filter` and `sort` array operators.
-
-### **Step 3**
-
-Save all the changes and run the app. Preview the updates in the browser, and confirm that the page shows an ul element with just 3 li elements as below:
-
-- Ice Cream - 200 cal
-- Tiramisu - 300 cal
-- Chocolate Cake - 400 cal
-
-### **Tip**
-
-If you’re having trouble with this lab, please review the `filter` and `sort` methods from arrays in JavaScript.
+By the end of this module, you will have completed the following:
+- A peer-review of some of your peers' projects
+- A graded assessment in which you synthesize the skills from this course
+- A reflection on your learning and the next steps in your developer journey

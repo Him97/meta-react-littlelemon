@@ -27,9 +27,17 @@
   background-color: rgba(73,94,87, 1);
 }
 
+.font-markazi{
+  font-family: 'Markazi Text', serif !important;
+}
+
+.font-karla{
+  font-family: 'Karla', sans-serif !important;
+  font-size: 16pt !important;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 

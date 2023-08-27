@@ -1,7 +1,7 @@
-import { Container } from "@chakra-ui/react";
-import { useState } from "react";
-import GoalForm from "./GoalForm";
-import ListOfGoals from "./GoalsList";
+import { Container } from 'react-bootstrap';
+import { useState } from 'react';
+import GoalForm from './GoalForm';
+import ListOfGoals from './GoalsList';
 
 export default function Goals() {
     const [allGoals, updateAllGoals] = useState([]);

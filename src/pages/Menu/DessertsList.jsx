@@ -1,9 +1,4 @@
-import {
-    Container,
-    Heading,
-    ListItem,
-    UnorderedList,
-} from '@chakra-ui/react'
+import { Container, ListGroup } from 'react-bootstrap'
 
 export default function DessertsList(props) {
 
@@ -30,7 +25,7 @@ export default function DessertsList(props) {
         },
     ];
 
-    const lowCaloriesDesserts = props.data
+    const lowCaloriesDesserts = desserts
         .filter((dessert) => {
             return dessert.calories < 500;
         })
@@ -39,14 +34,14 @@ export default function DessertsList(props) {
         })
         .map((dessert) => {
             return (
-                <ListItem>{dessert.name} - {dessert.calories} cal</ListItem>
+                <ListGroup.Item>{dessert.name} - {dessert.calories} cal</ListGroup.Item>
             )
         })
 
     return (
         <Container>
-            <Heading>List of low calorie desserts:</Heading>
-            <UnorderedList>{lowCaloriesDesserts}</UnorderedList>
+            <h1>List of low calorie desserts:</h1>
+            <ListGroup>{lowCaloriesDesserts}</ListGroup>
         </Container>
     );
 }
