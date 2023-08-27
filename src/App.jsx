@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import DessertsList from "./components/DessertsList";
-import { Container } from '@chakra-ui/react';
-import Goals from './pages/Goals/Goals';
-
-
+import { Container } from 'react-bootstrap';
+import Router from './Router';
+import './App.css'
 
 export default function App() {
 
   return (
-    <Container height={100}>
-      <Goals />
+    <Container>
+      <Router />
     </Container>
   )
 }
