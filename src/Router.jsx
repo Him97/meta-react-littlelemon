@@ -3,6 +3,7 @@ import HomePage from '../src/pages/Home/HomePage';
 import MenuPage from '../src/pages/Menu/MenuPage';
 import BookingPage from '../src/pages/Booking/BookingPage';
 import AboutPage from './pages/About/AboutPage';
+import UsersPage from './pages/Users/UsersPage';
 
 export default function Router() {
     return (
@@ -12,6 +13,7 @@ export default function Router() {
                 <Route path='/menu' element={<MenuPage />}></Route>
                 <Route path='/booking' element={<BookingPage />}></Route>
                 <Route path='/about' element={<AboutPage />}></Route>
+                <Route path='/users' element={<UsersPage />}></Route>
             </Routes>
         </BrowserRouter>
     )
