@@ -1,7 +1,6 @@
 import { Container, FloatingLabel, Form, Button, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { GET, POST } from "./utils/api";
-import { useEffect, useState } from 'react';
 import { GET, POST } from '../../utils/api'
+import { useEffect, useState } from 'react';
 
 /*
     1) on every error from our api, we will display alert message
@@ -14,6 +13,7 @@ export default function UsersPage() {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     useEffect(() => {
         handleGetUsers();
@@ -30,18 +30,16 @@ export default function UsersPage() {
         const body = {
             name,
             age,
-            email
+            email,
+            password
         }
         const data = await POST('/users', body);
         if (!data) { return }
-
         const { id } = data;
-
         const newUser = {
             id,
             ...body
         }
-
         setUsers([...users, newUser]);
     }
 
@@ -55,18 +53,15 @@ export default function UsersPage() {
             <Form>
                 <FloatingLabel label='Name'>
                     <Form.Control type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}></Form.Control>
-                    <Form.Control.Feedback type="invalid">
-                        Please choose a username.
-                    </Form.Control.Feedback>
                 </FloatingLabel>
                 <FloatingLabel label='Age'>
                     <Form.Control type='text' placeholder='Age' value={age} onChange={(e) => setAge(e.target.value)}></Form.Control>
                 </FloatingLabel>
                 <FloatingLabel label='Email'>
                     <Form.Control type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
-                    <Form.Control.Feedback type="invalid">
-                        Please choose a username.
-                    </Form.Control.Feedback>
+                </FloatingLabel>
+                <FloatingLabel label='Password'>
+                    <Form.Control type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
                 </FloatingLabel>
                 <Button type='submit' onClick={handleAddUser}>Add User</Button>
             </Form>
